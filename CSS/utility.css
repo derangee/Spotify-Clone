@@ -1,0 +1,125 @@
+body {
+    background-color: #121212;
+    color: whitesmoke;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    background-color: #121212;
+    display: flex;
+    margin: 1vw;
+    gap: 15px;
+    margin-top: 2vh;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navb {
+    background-color: #121212;
+    width: 95vw;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin-top: 3vh;
+}
+
+.border {
+    border: 2px solid white;
+}
+
+.borderr {
+    border-radius: 20vw;
+}
+
+.home {
+    color: white;
+    margin-top: 0.5vw;
+}
+
+.btn {
+    width: 8vw;
+    border-radius: 25vw;
+    font-weight: 100;
+}
+
+
+.sign:hover {
+    color: grey;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.1rem;
+
+}
+
+.log:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.home {
+    margin-left: 25vw;
+}
+
+.notif {
+    margin-left: 10vw;
+}
+
+.sign {
+    margin-left: 8vw;
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.log {
+    font-weight: bolder;
+}
+
+
+
+.add {
+    margin-left: 9vw;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+#play ,#next,#prev{
+    cursor: pointer;
+}
+
+.info, .duration {
+    filter:invert(1);
+}
+
+.legal a {
+    color: inherit;
+    font-size: x-small;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.cookie a {
+    color: inherit;
+    font-size: x-small;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.fixed{
+    position:fixed;
+}

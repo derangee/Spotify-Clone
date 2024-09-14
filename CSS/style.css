@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.left {
+    width: 25vw;
+    height: 80vh;
+    border-radius: 3vh;
+    background-color: rgb(35, 35, 35);
+    position: sticky;
+    top: 0;
+}
+
+.right {
+    width: 75vw;
+    height: 80vh;
+    position: relative;
+    border-radius: 3vh;
+    background-color: rgb(40, 40, 40);
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+
+
+
+.lib {
+    display: flex;
+    gap: 15px;
+
+}
+
+.art {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin-left: 0.75vw;
+}
+
+.search {
+    display: flex;
+    width: 30vw;
+    border: 3px solid white;
+    border-radius: 20vw;
+    padding: 5px;
+}
+
+.browse {
+    display: flex;
+}
+
+
+.libbox {
+    border: 2px solid transparent;
+    border-radius: 1vw;
+    margin: 0.5vw;
+    margin-top: 1vh;
+    background-color: rgb(50, 50, 50);
+}
+
+.crp {
+    background-color: white;
+    color: black;
+    border: 3px solid white;
+    font-weight: bold;
+    border-radius: 25vw;
+    width: 8vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1vw;
+    margin-left: 6vw;
+}
+
+.pod {
+    border: 2px solid transparent;
+    border-radius: 1vw;
+    margin: 0.5vw;
+    margin-top: 6vh;
+    background-color: rgb(50, 50, 50);
+}
+
+.crpp {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 25vw;
+    width: 9vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5vw;
+    margin-left: 6vw;
+}
+
+
+
+
+
+.legalbox {
+
+    margin-top: 12vh;
+}
+
+.legal {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.cookie {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.lang {
+    border: 3px solid white;
+    border-radius: 25vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2vw;
+    margin-top: 5vh;
+    margin-left: 8vw;
+}
+
+.songs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    margin-left: 1vw;
+    overflow-y: auto;
+    height: 70vh;
+    scrollbar-width: none;
+}
+
+.card {
+    margin-top: 1vh;
+    border: 3px solid white;
+    width: 15vw;
+    height: 45vh;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.left {
+    width: 25vw;
+    height: 80vh;
+    border-radius: 3vh;
+    background-color: rgb(35, 35, 35);
+    position: sticky;
+    top: 0;
+}
+
+.right {
+    width: 75vw;
+    height: 80vh;
+    position: relative;
+    border-radius: 3vh;
+    background-color: rgb(40, 40, 40);
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+
+
+
+.lib {
+    display: flex;
+    gap: 15px;
+
+}
+
+.art {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin-left: 0.75vw;
+}
+
+.search {
+    display: flex;
+    width: 30vw;
+    border: 3px solid white;
+    border-radius: 20vw;
+    padding: 5px;
+}
+
+.browse {
+    display: flex;
+}
+
+
+.libbox {
+    border: 2px solid transparent;
+    border-radius: 1vw;
+    margin: 0.5vw;
+    margin-top: 1vh;
+    background-color: rgb(50, 50, 50);
+}
+
+.crp {
+    background-color: white;
+    color: black;
+    border: 3px solid white;
+    font-weight: bold;
+    border-radius: 25vw;
+    width: 8vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1vw;
+    margin-left: 6vw;
+}
+
+.pod {
+    border: 2px solid transparent;
+    border-radius: 1vw;
+    margin: 0.5vw;
+    margin-top: 6vh;
+    background-color: rgb(50, 50, 50);
+}
+
+.crpp {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 25vw;
+    width: 9vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5vw;
+    margin-left: 6vw;
+}
+
+
+
+
+
+.legalbox {
+
+    margin-top: 12vh;
+}
+
+.legal {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.cookie {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.lang {
+    border: 3px solid white;
+    border-radius: 25vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2vw;
+    margin-top: 5vh;
+    margin-left: 8vw;
+}
+
+.songs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    margin-left: 1vw;
+    overflow-y: auto;
+    height: 70vh;
+    scrollbar-width: none;
+}
+
+.card {
+    margin-top: 1vh;
+    border: 3px solid white;
+    width: 15vw;
+    height: 45vh;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.playbar {
+    position: sticky;
+    bottom: 0;
+    margin-left: 3vw;
+    width: 90vw;
+    height: 9vh;
+    border: 1px solid #968f8f;
+    border-radius: 5px;
+    background-color: #121212;
+}
+
+
+.songbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5vh;
+    filter: invert(1);
+    position: absolute;
+}
+
+
+
+.songbtn>* {
+    margin-right: 200px;
+}
+
+.songicon>* {
+    margin-right: 30px;
+}
+
+
+.seekbar {
+    cursor: pointer;
+    margin-top: 8vh;
+    background-color: white;
+    height: 1px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 50%;
+    bottom: 10px;
+    margin-left: 28vw;
+    position: relative;
+}
+
+
+.circle {
+    background-color: rgb(83, 240, 52);
+    width: 15px;
+    height: 15px;
+    margin-top: 1.5vh;
+    border-radius: 10px;
+    bottom: 4.2vh;
+    margin-left: 28vw;
+    position: relative;
+    transition: left 0.5s;
+}
+
+.cov img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    filter: invert(1);
+    display: block;
+    margin-left: 2vw;
+}

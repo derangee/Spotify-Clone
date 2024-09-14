@@ -1,0 +1,56 @@
+.scroll {
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 40vh;
+    scrollbar-width: none;
+}
+
+.scroll {
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+
+.scroll:hover {
+    scrollbar-width: auto;
+   
+    -ms-overflow-style: auto;
+    
+}
+
+.scroll:hover::-webkit-scrollbar {
+    display: block;
+    /* For Chrome, Safari, and Opera */
+    width: 8px;
+    /* Optional: Set scrollbar width */
+}
+
+.scroll:hover::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Scrollbar thumb color */
+    border-radius: 10px;
+}
+
+
+
+
+.right::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    background: transparent; /* Background of the scrollbar track */
+}
+
+/* Show scrollbar on hover */
+.right:hover::-webkit-scrollbar {
+    background-color: #1a1a1a; /* Dark background of the scrollbar track on hover */
+}
+
+/* Scrollbar thumb (the draggable part) */
+.right::-webkit-scrollbar-thumb {
+    background: #333; /* Dark grey color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar thumb on hover */
+.right:hover::-webkit-scrollbar-thumb {
+    background: #555; /* Slightly lighter grey color of the scrollbar thumb on hover */
+}
