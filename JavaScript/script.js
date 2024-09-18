@@ -18,7 +18,7 @@ const songArtistMap = {
     "http://127.0.0.1:3000/Songs/Co2.mp3": "Prateek Kuhad",
     "http://127.0.0.1:3000/Songs/Euphoria.mp3": "Kendrick Lamar",
     "http://127.0.0.1:3000/Songs/I%20Wonder.mp3": "Kanye West",
-    "http://127.0.0.1:3000/Songs/MY%20EYES.mp3": "Travis Scott",
+    "http://127.0.0.1:3000/Songs/MY%20EYES.mp3": "Travis Scott", 
     "http://127.0.0.1:3000/Songs/Runaway.mp3": "Kanye West",
     "http://127.0.0.1:3000/Songs/Starboy.mp3": "The Weeknd",
     "http://127.0.0.1:3000/Songs/Tum%20Hi%20Ho.mp3": "Mithoon, Arijit Singh"
