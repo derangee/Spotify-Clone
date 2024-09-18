@@ -21,6 +21,10 @@
 }
 
 
+.brow {
+    margin-right: 10px;
+}
+
 
 
 .lib {
@@ -46,6 +50,7 @@
 
 .browse {
     display: flex;
+    left: 10%;
 }
 
 
@@ -101,10 +106,6 @@
 
 
 
-.legalbox {
-
-    margin-top: 12vh;
-}
 
 .legal {
     list-style: none;
@@ -128,8 +129,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 2vw;
-    margin-top: 5vh;
+
     margin-left: 8vw;
 }
 
@@ -161,12 +161,13 @@
 
 .left {
     width: 25vw;
-    height: 80vh;
+    height: 78vh;
     border-radius: 3vh;
     background-color: rgb(35, 35, 35);
     position: sticky;
     top: 0;
 }
+
 
 .right {
     width: 75vw;
@@ -261,7 +262,7 @@
 
 .legalbox {
 
-    margin-top: 12vh;
+    margin-top: 10vh;
 }
 
 .legal {
@@ -287,7 +288,7 @@
     align-items: center;
     text-align: center;
     margin: 2vw;
-    margin-top: 5vh;
+    margin-top: 2vh;
     margin-left: 8vw;
 }
 
@@ -315,23 +316,25 @@
 }
 
 .playbar {
-    position: sticky;
+    position: fixed;
     bottom: 0;
-    margin-left: 3vw;
-    width: 90vw;
-    height: 9vh;
-    border: 1px solid #968f8f;
+    width: 100%;
+    height: 10vh;
+    border: 1px solid transparent;
     border-radius: 5px;
     background-color: #121212;
+
 }
 
 
 .songbtn {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 1.5vh;
     filter: invert(1);
     position: absolute;
+    align-items: center;
 }
 
 
@@ -341,19 +344,31 @@
 }
 
 .songicon>* {
-    margin-right: 30px;
+    margin-right: 0.5vw;
+}
+
+.info {
+    filter: invert(1);
+    max-width: 150px;
+    min-width: 150px;
+}
+
+.duration {
+    filter: invert(1);
+    max-width: 100px;
+    margin-left: 4vw;
 }
 
 
 .seekbar {
     cursor: pointer;
-    margin-top: 8vh;
+    margin-top: 9vh;
     background-color: white;
     height: 1px;
     border: 2px solid white;
     border-radius: 10px;
     width: 50%;
-    bottom: 10px;
+    bottom: 5px;
     margin-left: 28vw;
     position: relative;
 }
@@ -365,7 +380,7 @@
     height: 15px;
     margin-top: 1.5vh;
     border-radius: 10px;
-    bottom: 4.2vh;
+    bottom: 3.8vh;
     margin-left: 28vw;
     position: relative;
     transition: left 0.5s;
@@ -374,8 +389,8 @@
 .cov img {
     height: 50px;
     width: 50px;
-    object-fit: cover;
+    object-fit: fill;
     filter: invert(1);
     display: block;
-    margin-left: 2vw;
+    margin-left: 5vw;
 }

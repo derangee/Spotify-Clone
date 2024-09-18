@@ -24,8 +24,7 @@ const songArtistMap = {
     "http://127.0.0.1:3000/Songs/Tum%20Hi%20Ho.mp3": "Mithoon, Arijit Singh"
 };
 
-
-
+let songindex = 0;
 
 function formatTime(seconds) {
     if (isNaN(seconds) || seconds < 0) return "00:00"; // Handle invalid or negative input
@@ -61,7 +60,7 @@ async function fetchsongs() {
 
 let audio
 
-const playmusic = (track,pause = false) => {
+const playmusic = (track, pause = false) => {
 
     if (audio) {
         audio.pause()
@@ -82,19 +81,17 @@ const playmusic = (track,pause = false) => {
     audio.addEventListener("timeupdate", () => {
         console.log(audio.currentTime, audio.duration)
         document.querySelector(".duration").innerHTML = `${formatTime(audio.currentTime)}/${formatTime(audio.duration)}`
-       document.querySelector(".circle").style.left = (audio.currentTime / audio.duration) * 50 + "%"
+        document.querySelector(".circle").style.left = (audio.currentTime / audio.duration) * 50 + "%"
     })
 
     document.querySelector(".seekbar").addEventListener("click", e => {
-       
+
         let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 50
         document.querySelector(".circle").style.left = (e.offsetX / e.target.getBoundingClientRect().width) * 50 + "%"
-        audio.currentTime = (audio.duration * percent) /50
+        audio.currentTime = (audio.duration * percent) / 50
     })
 
-    prev.addEventListener("click", () => {
-        console.log("prev was clicked")
-    })
+
 
 
     next.addEventListener("click", () => {
@@ -111,6 +108,7 @@ const playmusic = (track,pause = false) => {
 async function main() {
     let songs = await fetchsongs();
     playmusic(songs[5], true)
+    songindex = 5;
 
     let songcard = document.querySelector(".songs")
     console.log(songcard)
@@ -132,21 +130,32 @@ async function main() {
 
 
 
-    Array.from(document.querySelectorAll(".card")).forEach(e => {
+    Array.from(document.querySelectorAll(".card")).forEach((e, index) => {
         e.addEventListener("click", () => {
-
             const songName = e.getElementsByTagName("h3")[0].textContent.trim()
             const encode = encodeURIComponent(songName)
             const track = songs.find((song) => song.includes(encode));
             if (track) {
                 playmusic(track)
+                songindex = index;
             }
         })
-
     });
 
 
+    prev.addEventListener("click", () => {
+        if (songindex > 0) {
+            songindex--;
+            playmusic(songs[songindex]);
+        }
+    });
 
+    next.addEventListener("click", () => {
+        if (songindex < songs.length -1) {
+            songindex++;
+            playmusic(songs[songindex])
+        }
+    })
 
 
     let play = document.querySelector("#play")
@@ -163,6 +172,8 @@ async function main() {
 
         }
     })
+
+
 
 }
 
