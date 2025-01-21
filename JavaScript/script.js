@@ -111,7 +111,7 @@ async function main() {
     songindex = 5;
 
     let songcard = document.querySelector(".songs")
-    console.log(songcard)
+
 
 
 
